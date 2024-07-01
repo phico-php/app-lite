@@ -1,0 +1,24 @@
+{
+  "name": "phico/app-lite",
+  "description": "A minimal app install for Phico without optional packages",
+  "type": "project",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "/home/dev/phico-php/phico"
+    }
+  ],
+  "require": {
+    "phico/phico": "dev-main"
+  },
+  "scripts": {
+    "post-create-project-cmd": "./phico init"
+  }
+}
